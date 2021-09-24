@@ -1,0 +1,83 @@
+header, footer, h1, h2, h3{
+  font-family: "Shippori Mincho";
+}
+
+#pagetitle{
+  font-size: 36px;
+  color: #333366
+}
+#menubar{
+  width: 100%;
+  padding: 3px 0;
+  background-color: #333366;
+}
+#menubar a{
+  border-right: solid 1px white;
+  padding: 0 16px;
+  color: white;
+  text-decoration: none;
+}
+#menubar a:hover, a:hover{
+  color: #ff6699;
+}
+
+#maincontents{
+  max-width: 960px;
+  margin: 50px auto;
+}
+a, a:link{
+  color: #6699cc
+}
+
+footer{
+  margin-top: 3em;
+  width: 99%;
+  border-top: solid 5px #333366;
+  padding-top: .5em;
+  padding-left: 1em;
+  font-size: 12px;
+  color: #333366;
+}
+
+
+h1{
+  color: #333366;
+}
+h1::before{
+  font-family: 'Font Awesome 5 Free';
+  content: '\f6d1  ';
+}
+h2{
+  margin: 50px auto 30px .5em;
+  border-top: solid 1px black;
+}
+h3{
+  margin-left: 2em;
+  border-left: solid 2px black;
+  padding-left: 3px;
+}
+p{
+  margin: auto 2em;
+}
+
+.cardstyle{
+  clear: both;
+  margin: auto;
+  max-width: 800px;
+}
+
+ul{
+  margin-left: 2em;
+}
+
+/* Animation */
+/*
+header, footer{
+    animation: fadeIn 1s ease 0s 1 normal;
+}
+
+@keyframes fadeIn {
+    0% {opacity: 0}
+    100% {opacity: 1}
+}
+*/

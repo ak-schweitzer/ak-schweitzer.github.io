@@ -1,1 +1,101 @@
-aaa
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="common.css">
+    <!-- web fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Shippori+Mincho:wght@700&display=swap" rel="stylesheet">
+    <link href="webfonts/css/all.css" rel="stylesheet">
+    <!-- web fonts end -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.3.3/css/swiper.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.3.3/js/swiper.min.js"></script>
+    <style>
+      .swiper-container{
+        width: 96%;
+        background-color: black;
+        padding: 10px;
+        margin: 50px auto;
+      }
+      .swiper-slide{
+        width: 310px;
+        max-width: 100%;
+        height: 240px;
+        background-color: black;
+        color: white;
+      }
+    </style>
+    <title>ホーム -aki-labo.net-</title>
+  </head>
+  <body>
+    <header>
+      <div id="pagetitle">aki-labo.net</div>
+      <div id="menubar">
+        <a href="index.html"><i class="fas fa-home"></i></a>
+        <a href="profile.html"><i class="far fa-smile"></i> プロフィール</a>
+        <a href="oculus-vr.html">Oculus VR</a>
+        <a href="web-contents.html">Webコンテンツ</a>
+        <a href="platz.html">Platz</a>
+      </div>
+    </header>
+    <div id="maincontents">
+
+      <!-- <h2>作品事例</h2> -->
+      <div class="swiper-container">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide" style="background-image:url('images/ar01.png')">サンプル1</div>
+          <div class="swiper-slide" style="background-image:url('images/ar02.png')">サンプル2</div>
+          <div class="swiper-slide" style="background-image:url('images/oculus01.jpg')">サンプル3</div>
+          <div class="swiper-slide" style="background-image:url('images/twinmotion01.png')">サンプル4</div>
+          <div class="swiper-slide" style="background-image:url('images/twinmotion02.png')">サンプル5</div>
+          <div class="swiper-slide" style="background-image:url('images/ue401.png')">サンプル6</div>
+        </div>
+        <div class="swiper-button-prev swiper-button-white swiper-nav"></div>
+        <div class="swiper-button-next swiper-button-white swiper-nav"></div>
+        <div class="swiper-pagination swiper-nav"></div>
+      </div>
+
+      <h2>このサイト aki-labo.net について</h2>
+      <p>私アキーラが作成した事例を展示しています。</p>
+      <p>SNS リンクだけ控えめに</p>
+
+      <!-- <p>その他は上のメニューバーまたはこちらから</p>
+      <p>
+        <a href="oculus-vr.html">Oculus VR</a>
+        <a href="web-contents.html">Webコンテンツ</a>
+        <a href="platz.html">Platz</a>
+      </p> -->
+
+    </div>
+    <footer>&copy;2021 aki-labo.net</footer>
+
+    <script>
+      var mySwiper = new Swiper('.swiper-container', {
+        effect: 'coverflow',
+        centeredSlides: true,
+        loop: true,
+        slidesPerView: 'auto',
+        spaceBetween: 15,
+        speed: 500,
+        mousewheel: {},
+        navigation: {
+          nextEl: '.swiper-button-next',
+          prevEl: '.swiper-button-prev'
+        },
+        pagination: {
+          el: '.swiper-pagination',
+          type: 'bullets',
+          clickable: true
+        },
+        autoplay: {
+          delay: 5000, // スライドが切り替わるまでの表示時間(ミリ秒)
+          stopOnLast: false, // 最後のスライドまで表示されたら自動再生を中止するか
+          disableOnInteraction: true // ユーザーのスワイプ操作を検出したら自動再生を中止するか
+        },
+        preventClicks: false,
+        preventClicksPropagation: false
+      });
+    </script>
+  </body>
+</html>
