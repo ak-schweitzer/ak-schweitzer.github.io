@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.3.3/css/swiper.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.3.3/js/swiper.min.js"></script>
+
+    <title>Web Portfolio</title>
+
+    <style>
+      #main-container{
+        max-width: 960px;
+        margin: 3em auto;
+        padding-top: 50px;
+      }
+      header{
+        z-index: 9999;
+        position: fixed;
+        width: 100%;
+        max-width: 960px;
+        top: 0;
+        background-color: rgba(255, 255, 255, .9);
+        border-bottom: solid 1px black;
+      }
+      footer{
+        margin-top: 50px;
+        border-top: solid 1px black;
+      }
+
+
+      .swiper-nav{
+        display: none;
+      }
+      .swiper-container:hover .swiper-nav{
+        display: block;
+      }
+
+/* 全体のスタイル */
+.swiper-wrapper {
+	width: 100%;
+}
+/* 全スライド共通スタイル */
+.swiper-slide {
+  max-width: 99%;
+  width: 420px;
+  height: auto;
+  border: solid 1px lightgray;
+}
+
+    </style>
+
+  </head>
+  <body>
+    <div id="main-container">
+      <header>
+        <h1>Web Portfolio</h1>
+      </header>
+
+      <h2>略歴</h2>
+        <ul>
+          <li>出身：神奈川県伊勢原市（出生は大阪府東大阪市）</li>
+          <li>最終学歴：大阪大学大学院工学研究科（分野：都市計画、2008年3月修士課程卒業）</li>
+          <li>卒業後、建築設計事務所などで勤務、2012年に一級建築士取得</li>
+          <li>ワーキングホリデーなどでドイツ・フライブルクに滞在（計3年あまり）</li>
+        </ul>
+
+      <h2>活動</h2>
+      <h3>エコ・フライヴィリヒ</h3>
+      <ul>
+        <li></li>
+        <li>絵本など</li>
+      </ul>
+
+      <h3>Platz</h3>
+      <ul>
+        <li></li>
+        <li><a href="../platz.html" target="_blank">こちら</a>も参照</li>
+      </ul>
+
+      <h3>デジタルデザイン</h3>
+      <ul>
+        <li><a href="../oculus-vr.html" target="_blank">Oculus VR 実作</a></li>
+        <li><a href="../web-contents.html" target="_blank">他のWebコンテンツ</a></li>
+      </ul>
+
+      <h3>その他</h3>
+      <ul>
+        <li>Webサイト運営</li>
+        <li>絵</li>
+      </ul>
+
+
+
+      <h2>2016年版ポートフォリオ</h2>
+
+<!-- Swiper START -->
+<div class="swiper-container">
+	<!-- メイン表示部分 -->
+	<div class="swiper-wrapper">
+		<!-- 各スライド -->
+    <img class="swiper-slide" src="pages/05.jpg" />
+    <img class="swiper-slide" src="pages/11.jpg" />
+    <img class="swiper-slide" src="pages/18.jpg" />
+    <img class="swiper-slide" src="pages/19.jpg" />
+    <img class="swiper-slide" src="pages/20.jpg" />
+    <img class="swiper-slide" src="pages/21.jpg" />
+    <img class="swiper-slide" src="pages/22.jpg" />
+    <img class="swiper-slide" src="pages/23.jpg" />
+    <img class="swiper-slide" src="pages/24.jpg" />
+    <img class="swiper-slide" src="pages/25.jpg" />
+    <img class="swiper-slide" src="pages/26.jpg" />
+    <img class="swiper-slide" src="pages/27.jpg" />
+    <img class="swiper-slide" src="pages/28.jpg" />
+    <img class="swiper-slide" src="pages/29.jpg" />
+    <img class="swiper-slide" src="pages/30.jpg" />
+    <img class="swiper-slide" src="pages/31.jpg" />
+	</div>
+  <div class="swiper-button-prev swiper-nav"></div>
+	<div class="swiper-button-next swiper-nav"></div>
+	<div class="swiper-pagination swiper-nav"></div>
+</div>
+<!-- Swiper END -->
+
+
+
+<!--
+      <ul>
+        <li>論文要旨</li>
+        <li>キャンパスマップ</li>
+      </ul>
+-->
+
+      <footer>&copy;2021 Unauthorized reproduction prohibited.</footer>
+
+      <script>
+
+var mySwiper = new Swiper('.swiper-container', {
+	slidesPerView: 'auto',
+  spaceBetween: 10,
+  mousewheel: {},
+	navigation: {
+		nextEl: '.swiper-button-next',
+		prevEl: '.swiper-button-prev'
+	},
+	pagination: {
+		el: '.swiper-pagination',
+		type: 'bullets',
+		clickable: true
+	}
+});
+      </script>
+    </div>
+  </body>
+</html>
