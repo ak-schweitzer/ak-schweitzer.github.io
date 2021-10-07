@@ -1,7 +1,13 @@
-p, a, li{
+#maincontents a, p.lead{
   font-family: 'M PLUS 1p';
   font-weight: 500;
 }
+
+p, li{
+  font-family: 'M PLUS 1p';
+  font-weight: 400;
+}
+
 
 header, footer, h1, h2, h3{
   font-family: "Shippori Mincho";
@@ -78,8 +84,6 @@ p{
 }
 
 .tag{
-  font-family: 'M PLUS 1p';
-  font-weight: 400;
   display: inline-block;
   border: solid 1px black;
   border-radius: 3px;
