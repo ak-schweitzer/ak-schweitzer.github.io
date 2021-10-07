@@ -43,7 +43,8 @@ header, footer, h1, h2, h3{
 }
 
 a, a:link{
-  color: #6060a0;
+  /*color: #6060a0;*/
+  color: #669933;
 }
 
 footer{
