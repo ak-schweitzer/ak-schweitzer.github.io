@@ -25,8 +25,18 @@
     </header>
     <div id="maincontents">
 
-      <h1>Sample Room "Atelier"</h1>
-      <p>準備中... | Under Construction...
+      <h1>Sample Room 1 "Atelier"</h1>
+      <h2>Blender Output</h2>
+      <h3>Image</h3>
+      <img class="viewer" src="image/pano-atelier01.jpg" />
+
+      <h3>Panorama View</h3>
+      <div id="panorama" class="viewer"></div>
+      <script>pannellum.viewer('panorama',{"type":"equirectangular","panorama":"image/pano-atelier01.jpg","autoLoad":true });</script>
+
+      <h2>UE4 + Oculus VR</h2>
+      <p>製作中 under construction</p>
+
 
     </div>
     <footer>&copy;2021 aki-labo digital design</footer>
