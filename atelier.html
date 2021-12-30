@@ -12,13 +12,19 @@
     <!-- web fonts end -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/pannellum@2.5.6/build/pannellum.css"/>
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/pannellum@2.5.6/build/pannellum.js"></script>
-    <title>Sample Room "Atelier" - aki-labo digital design -</title>
+    <title>Sample Rooms - aki-labo digital design -</title>
     <style>
+
+    iframe{
+      margin-left: 3em;
+    }
+
     .viewer{
       width: 600px;
       max-width: 100%;
       height: 400px;
     }
+
     </style>
   </head>
   <body>
@@ -27,24 +33,59 @@
       <div id="menubar">
         <a href="./"><i class="fas fa-home"></i></a>
         <a href="profile.html"><i class="far fa-smile"></i> Profile</a>
-        <a href="atelier.html"><i class="fas fa-dice-d6"></i> Sample Room</a>
+        <a href="atelier.html"><i class="fas fa-star"></i></i> Sample Room</a>
         <a href="vr.html"><i class="fas fa-vr-cardboard"></i> VR</a>
+        <a href="other.html"><i class="fas fa-cubes"></i> Others</a>
         <a style="display:none" href="platz.html">Platz</a>
       </div>
     </header>
     <div id="maincontents">
 
-      <h1>Sample Room 1 "Atelier"</h1>
+      <h1>Sample Room 1 "Studio"</h1>
+      <h2>UE4 + Oculus VR</h2>
+      <ul>
+        <li>teleport</li>
+        <li>open door</li>
+        <li>swich light</li>
+        <li>grab object</li>
+        <li>night mode</li>
+        <li>design variation</li>
+      </ul>
+      <iframe src="https://player.vimeo.com/video/661129773?h=ed69efe76f&amp;title=0&amp;byline=0&amp;portrait=0&amp;speed=0&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" width="400" height="400" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen title="Studio"></iframe>
+      <br /><br />
+
+      <a id="atelier"></a>
+      <h1>Sample Room 2 "Atelier"</h1>
       <h2>Blender Output</h2>
       <h3>Image</h3>
       <img class="viewer" style="width:auto;max-width:600px;height:auto" src="image/atelier01.jpg" />
 
       <h3>Panorama View</h3>
-      <div id="panorama" class="viewer"></div>
-      <script>pannellum.viewer('panorama',{"type":"equirectangular","panorama":"image/pano-atelier01.jpg","autoLoad":true});</script>
+      <div id="pano1" class="viewer"></div>
+      <script>pannellum.viewer('pano1',{"type":"equirectangular","panorama":"image/pano-atelier01.jpg","autoLoad":true});</script>
 
       <h2>UE4 + Oculus VR</h2>
-      <p>製作中 under construction</p>
+
+
+      <a id="colony"></a>
+      <h1>Sample Complex "Colonial Village"</h1>
+      <h2>UE4 + Oculus VR</h2>
+      <iframe src="https://player.vimeo.com/video/658981242?h=9d974b00da&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" width="400" height="400" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen title="village"></iframe>
+
+      <a id="annex"></a>
+      <h1>Sample Rooms "Annex" (other samples)</h1>
+      <h2>"Hütte"</h2>
+      <h3>UE4 + Oculus VR</h3>
+      <iframe src="https://player.vimeo.com/video/658970291?h=336f335dc5&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" width="400" height="400" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen title="Hutte UE4"></iframe>
+      <h3>Godot Engine + Oculus VR</h3>
+      <iframe src="https://player.vimeo.com/video/658970737?h=a8555a9ec8&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" width="400" height="400" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen title="Hutte Godot"></iframe>
+
+      <h2>Other Rooms</h2>
+      <h3>Blender Panorama Demo</h3>
+      <div id="pano2" class="viewer"></div>
+      <script>pannellum.viewer('pano2',{"type":"equirectangular","panorama":"image/pano-annex01.jpg","autoLoad":true});</script>
+      <div id="pano3" class="viewer"></div>
+      <script>pannellum.viewer('pano3',{"type":"equirectangular","panorama":"image/pano-annex02.jpg","autoLoad":true});</script>
 
 
     </div>
